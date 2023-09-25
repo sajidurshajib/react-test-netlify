@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import netImg from './assets/netlify-logo-png-transparent.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div>
+            <div className="mid-center">
+                <img
+                    src={netImg}
+                    alt="logo"
+                    style={{ width: '80px', position: 'absolute', left: '-100px', top: '15px' }}
+                />
+                <h1>Netlify</h1>
+                <h2>Test with React</h2>
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default App
